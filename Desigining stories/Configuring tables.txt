@@ -1,0 +1,63 @@
+Build Tables
+Tables can be used to view and analyze data and are added to either responsive or canvas pages in stories.
+
+For tables that are based on models, the set of features and options available depends on the model type (planning, analytics, or a model based on a remote SAP HANA system). Only the features and options that are supported by the model type are visible. For example, tables based on planning models allow users to make changes to the model data using version management, data entry, and allocations; but tables based on analytic models are read-only.
+
+When you add a table to a story, a data grid is created with the basic dimensions and categories of the model aligned along the axes of the grid. You can change this basic layout using the following designer tools:
+
+Use the Builder panel to select the measures and dimensions to include in the rows and columns of your table.
+
+Use the Styling tools to format the presentation.
+
+You can add multiple measures and multiple dimensions to your table. When measures or dimensions are part of a hierarchy, you can expand them and select their level. If a dimension has properties associated with it, you can display those in the table, even without the dimension being present in the table. You can also apply filters to your measures and dimensions. The table is updated as you make your choices in the builder.
+
+Table Configuration
+The following example notes some of the options available to you when configuring the table.
+
+The table builder with (top to bottom) Styling, Change Primary Model, Swap Axis, Change Table Type highlighted on left. Add Measure/Dimensions to Rows (left) and Add Filters (bottom right).
+The Auto-size and Page Table Vertically setting can be used to scroll through the rows of a long table in View mode.
+
+Available Objects provides you with drag and drop functionality to build your tables and charts.
+
+Builder panel with the Available Objects open.
+In-Cell Chart
+You can display a bar chart in your table cells so that you have both a visual and a numeric view of your data. In the table, right-click a column or row header containing a measure or member of an account dimension, and then select In-Cell Chart.
+
+Example of in-cell charts in an SAP Analytics Cloud story table.
+Format Tables
+Styling Panel
+There are several options to adjust the formatting of the table in the Styling panel:
+
+Change the fonts for table regions (title cell, header, data).
+Switch to a different template.
+Create styles to apply to each region.
+Create styling rules to apply to members.
+Tables Templates
+When you create a table widget, the system applies the default template with built-in styles.
+
+Table template applied to various tables.
+Table Styles
+You can select a specific table region or cell(s) and change the font, style, and lines manually. However, if you want to apply the same style to multiple regions, you can create a new (reusable) style. You can apply a style to any table region.
+
+
+Note
+
+Styles are available for any table in the story from any data source.
+Styling Rules
+If you want to control the style based on what the cells contain, you can create a styling rule.
+
+When creating a styling rule, the context for the style is based on where your cursor is in the table. After you determine the context, you can apply an existing style or create a new one in the Styling Rule dialog.
+
+In SAP Analytics Cloud, styling rules allow you to make text style changes along a hierarchy, changing styles for sibling, descendant, or child members. Styling changes that you make to the hierarchy are also applied to new members in the hierarchy. The level options include:
+
+Self: only apply the style to the member itself. Example: If you select 2024, the style applies only to 2024 but not to half year, quarters, or months in 2024 or any other years in the table.
+Self and Children: apply the style to the member and its children (not grandchildren). Example: If you select 2024, the style applies to 2024 and to its half years, but not its quarters and not its months.
+Self and Descendants: apply the style to the member and its children and grandchildren, etc.). Example: If you select 2024, the style applies to 2024 and to its half years, its quarters and its months.
+Self and Siblings: apply the style to the member and its brothers and sisters). Example: If you select 2024, the style applies to 2024, 2025, and 2026 but not to their half years, quarters and months.
+After you apply the styling rule, any data in the table with the same context will inherit the same style.
+
+In the following example, you can see that the styling rule Style3 has been applied to: United States Entity / Plan & Actual Versions for the Operating Income Account and its children.
+
+Styling Rule panel showing table styling rule set up (left) and the rule applied to a table (right).
+You can change the order of the rules to determine the precedence if there is a conflict.
+
