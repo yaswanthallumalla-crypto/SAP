@@ -1,0 +1,10 @@
+Charts
+Create charts in a story to display your data graphically. As shown in the following chart, you can select a chart type from the builder and then pick the measures and dimensions to show in your chart. Once you have defined the structure of your chart, you can add other chart elements and/or filters. You can also customize color palettes.
+
+Chart options available to select from the Builder panel.
+Because of the many elements available to include on a chart, if the widget is too small, some elements or labels may not display. Simply making the chart larger on the page will correct this issue.
+
+Configure Charts and Widgets
+Business Scenario: You are responsible for creating visualizations to meet a variety of business requirements for you team.
+
+You need learn how to configure charts and work with chart features that the users will find helpful.
